@@ -1,7 +1,5 @@
-eval "$(starship init zsh)"
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
-export PGHOST="/var/run/postgresql"
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/.local/bin:$PATH"
