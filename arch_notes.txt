@@ -1,0 +1,54 @@
+pacman -Qent > pkglist.txt
+pacman -Qemq > aurlist.txt
+
+boot from usb. archinstall 
+Start with: GNOME only (profile GNOME + gdu + nvidia-proprietary, multilib enabled)
+
+=====RICE=====
+sudo pacman -Syu
+sudo pacman -S fastfetch i3 alacritty polybar rofi nvim thunderbird 
+sudo pacman -S --needed base-devel git
+mkdir ~/Packages
+cd ~/Packages
+git clone https://aur.archlinux.org/yay.git
+cd yay 
+makepkg -si
+yay -Syu
+yay -S ttf-meslo-nerd
+yay -S picom stow
+=====RICE=====
+
+=====BLUETOOTH=====
+sudo pacman -S bluez bluez-utils
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+bluetoothctl > power on > default-agent > scan on > #wait to see your device XX:XX... > scan off > connect XX:XX... > trust XX:XX... > exit
+=====BLUETOOTH=====
+
+=====BIRDTRAY=====
+yay -G birdtray
+cd ~/birdtray
+sed -i '/^ *cmake .. -DCMAKE_INSTALL_PREFIX=\/usr/ s/$/ -DCMAKE_POLICY_VERSION_MINIMUM=3.5/' PKGBUILD
+makepkg -sri
+rm -rf ~/birdtray
+=====BIRDTRAY=====
+
+====STOW DOTFILES====
+====STOW DOTFILES====
+
+=====ZSH=====
+sudo pacman -S zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+reboot now
+=====ZSH=====
+
+=====BIOS BOOT (DANGER)=====
+sudo pacman -Syu efibootmgr grub
+sudo mkdir -p /boot/EFI/ARCH
+sudo cp /boot/EFI/BOOT/BOOTX64.EFI /boot/EFI/ARCH/grubx64.efi
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+DANGER sudo efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "Arch Linux" --loader '\EFI\ARCH\grubx64.efi' DANGER
+=====BIOS BOOT (DANGER)=====
+
+
