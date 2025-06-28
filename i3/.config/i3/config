@@ -201,6 +201,7 @@ exec --no-startup-id polybar
 exec --no-startup-id nm-applet  # tray networkmanager
 exec --no-startup-id blueman-applet
 exec --no-startup-id xclip
+exec --no-startup-id xset s off -dpms
 exec --no-startup-id sleep 1 && copyq
 exec --no-startup-id ~/.config/i3/scripts/background.sh
 exec --no-startup-id xeventbind resolution ~/.config/i3/scripts/display_redraw.sh
