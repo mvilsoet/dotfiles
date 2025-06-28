@@ -6,7 +6,7 @@ Start with: GNOME only (profile GNOME + gdu + nvidia-proprietary, multilib enabl
 
 =====RICE=====
 sudo pacman -Syu
-sudo pacman -S fastfetch i3 alacritty polybar rofi nvim thunderbird 
+sudo pacman -S fastfetch i3 kitty polybar rofi nvim feh dunst thunderbird lxqt-policykit xclip 
 sudo pacman -S --needed base-devel git
 mkdir ~/Packages
 cd ~/Packages
@@ -19,26 +19,30 @@ yay -S picom stow
 =====RICE=====
 
 =====BLUETOOTH=====
-sudo pacman -S bluez bluez-utils
+sudo pacman -S bluez bluez-utils blueman
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 bluetoothctl > power on > default-agent > scan on > #wait to see your device XX:XX... > scan off > connect XX:XX... > trust XX:XX... > exit
 =====BLUETOOTH=====
 
 =====BIRDTRAY=====
+cd ~/Packages
 yay -G birdtray
-cd ~/birdtray
+cd birdtray
 sed -i '/^ *cmake .. -DCMAKE_INSTALL_PREFIX=\/usr/ s/$/ -DCMAKE_POLICY_VERSION_MINIMUM=3.5/' PKGBUILD
 makepkg -sri
 rm -rf ~/birdtray
 =====BIRDTRAY=====
 
 ====STOW DOTFILES====
+cd ~/Packages
+git clone https://github.com/mvilsoet/dotfiles.git
+cd dotfiles 
+stow -v -t "$HOME" <pkgs>
 ====STOW DOTFILES====
 
 =====ZSH=====
 sudo pacman -S zsh
-chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 reboot now
 =====ZSH=====
