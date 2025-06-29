@@ -1,11 +1,7 @@
-/** Configured For Applets **/
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+@theme "~/.local/share/rofi/themes/spotlight-dark.rasi"
 
 configuration {
   show-icons:         true;
-  icon-theme:         "Gruvbox-Plus-Dark";
+  icon-theme:         "Papirus-Dark";
 }
-//@theme "~/.config/rofi/themes/gruvbox/gruvbox-dark-hard.rasi"
-
-//@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"

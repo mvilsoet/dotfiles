@@ -3,10 +3,12 @@ pacman -Qemq > aurlist.txt
 
 boot from usb. archinstall 
 Start with: GNOME only (profile GNOME + gdu + nvidia-proprietary, multilib enabled)
+Use https://chromewebstore.google.com/detail/gruvbox-theme/pligoajaaggbghgopjdmkfbnaodknplm
+https://github.com/newmanls/rofi-themes-collection/tree/master
 
 =====RICE=====
 sudo pacman -Syu
-sudo pacman -S fastfetch i3 kitty polybar rofi nvim feh dunst thunderbird lxqt-policykit xclip 
+sudo pacman -S fastfetch i3 kitty polybar rofi nvim feh dunst papirus-icon-theme thunderbird lxqt-policykit xclip 
 sudo pacman -S --needed base-devel git
 mkdir ~/Packages
 cd ~/Packages
