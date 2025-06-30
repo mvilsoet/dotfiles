@@ -1,2 +1,2 @@
 #!/bin/bash
-rofi -e "$(cat ~/.config/i3/scripts/cheatsheet.txt)"
+rofi -e "$(column -t -s $'\t' ~/.config/i3/scripts/cheatsheet.txt)"
