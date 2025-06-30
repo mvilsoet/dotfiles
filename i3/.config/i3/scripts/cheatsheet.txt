@@ -1,72 +1,66 @@
 ----- i3wm Keybindings:
-
 # Launch and Exit
-Mod+Enter	Open terminal
-Mod+d	Run dmenu
-Mod+space	Launch rofi (run launcher)
-Mod+Shift+c	Reload i3 config
-Mod+Shift+r	Restart i3 inplace
-Mod+Shift+e	Exit i3 (with confirmation)
+Mod+Enter        → Open terminal
+Mod+Shift+space  → Show keybinds cheatsheet
+Mod+space        → Launch rofi (run launcher)
+Mod+Shift+c      → Reload i3 config
+Mod+Shift+r      → Restart i3 inplace
+Mod+Shift+e      → Exit i3 (with confirmation)
 
 # Window Management
-Mod+q	Kill focused window
-Mod+h/j/k/l	Focus left/down/up/right
-Mod+Left/Down/Up/Right	Same focus with arrows
-Mod+Shift+h/j/k/l	Move focused window left/down/up/right
-Mod+Shift+Arrows	Same move with arrows
-Mod+v	Split container vertically
-Mod+f	Toggle fullscreen focused container
-Mod+s	Layout stacking
-Mod+w	Layout tabbed
-Mod+e	Toggle split layout
-Mod+a	Focus parent container
+Mod+q                    → Kill focused window
+Mod+h/j/k/l/Arrows       → Focus left/down/up/right
+Mod+Shift+h/j/k/l/Arrows → Move focused window left/down/up/right
+
+Mod+v            → Split container vertically
+Mod+f            → Toggle fullscreen focused container
+Mod+s            → Layout stacking
+Mod+w            → Layout tabbed
+Mod+e            → Toggle split layout
+Mod+a            → Focus parent container
 
 # Workspace Management
-Mod+1..0	Switch to workspace 1..10
-Mod+Shift+1..0	Move focused container to workspace 1..10
+Mod+1..0         → Switch to workspace 1..10
+Mod+Shift+1..0   → Move focused container to workspace 1..10
 
 # Resize Mode (Mod+r)
-j / Left	Shrink width
-k / Down	Grow height
-l / Up	Shrink height
-; / Right	Grow width
-Enter / Escape / Mod+r	Exit resize mode
+j / Left         → Shrink width
+k / Down         → Grow height
+l / Up           → Shrink height
+; / Right        → Grow width
+Enter / Escape / Mod+r → Exit resize mode
 
 ----- Kitty Terminal:
+Ctrl+Right       → Next tab
+Ctrl+Left        → Previous tab
+Ctrl+Shift+Right → Move tab forward
+Ctrl+Shift+Left  → Move tab backward
 
-Ctrl+Right	Next tab
-Ctrl+Left	Previous tab
-Ctrl+Shift+Right	Move tab forward
-Ctrl+Shift+Left	Move tab backward
-Ctrl+t	New tab with current working directory
-Ctrl+q / Ctrl+w	Close tab
-Ctrl+Shift+q / Ctrl+Shift+w	Close OS window
-Ctrl+Shift+t	Set tab title
-Ctrl+=	Increase font size
-Ctrl+-	Decrease font size
+Ctrl+t           → New tab with current working directory
+Ctrl+q / Ctrl+w  → Close tab
+Ctrl+=           → Increase font size
+Ctrl+-           → Decrease font size
 
------ Brave:
-
-Ctrl+t	Open new tab
-Ctrl+w	Close current tab
-Ctrl+Shift+t	Reopen last closed tab
-Ctrl+Tab	Next tab
-Ctrl+Shift+Tab	Previous tab
-Ctrl+L	Focus address bar
-Ctrl+R / F5	Reload page
-Ctrl+Shift+N	Private Window
-Ctrl+Shift+B	Toggle bookmarks bar
+----- Brave Browser (Default Shortcuts):
+Ctrl+t           → Open new tab
+Ctrl+w           → Close current tab
+Ctrl+Shift+t     → Reopen last closed tab
+Ctrl+Tab         → Next tab
+Ctrl+Shift+Tab   → Previous tab
+Ctrl+L           → Focus address bar
+Ctrl+R / F5      → Reload page
+Ctrl+Shift+N     → Private Window
+Ctrl+Shift+B     → Toggle bookmarks bar
 
 ----- tmux (Default Prefix: Ctrl+b):
-
-Ctrl+b c	Create new window
-Ctrl+b d	Detach session
-Ctrl+b n	Next window
-Ctrl+b p	Previous window
-Ctrl+b &	Kill window
-Ctrl+b "	Split pane horizontally
-Ctrl+b %	Split pane vertically
-Ctrl+b o	Toggle between panes
-Ctrl+b x	Kill pane
-Ctrl+b [	Enter copy mode
-Ctrl+b ]	Paste buffer
+Ctrl+b c         → Create new window
+Ctrl+b d         → Detach session
+Ctrl+b n         → Next window
+Ctrl+b p         → Previous window
+Ctrl+b &         → Kill window
+Ctrl+b "         → Split pane horizontally
+Ctrl+b %         → Split pane vertically
+Ctrl+b o         → Toggle between panes
+Ctrl+b x         → Kill pane
+Ctrl+b [         → Enter copy mode
+Ctrl+b ]         → Paste buffer
