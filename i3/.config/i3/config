@@ -207,5 +207,3 @@ exec --no-startup-id sleep 1 && copyq
 exec --no-startup-id ~/.config/i3/scripts/background.sh
 exec --no-startup-id xeventbind resolution ~/.config/i3/scripts/display_redraw.sh
 exec --no-startup-id birdtray
-
-exec --no-startup-id ~/Packages/pia-linux-3.6.1-08339.run
