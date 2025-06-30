@@ -4,7 +4,6 @@ i3wm Keybindings:
 Mod+Enter        → Open terminal
 Mod+d            → Run dmenu
 Mod+space        → Launch rofi (run launcher)
-Mod+Shift+space  → Toggle floating mode (popup cheatsheet here!)
 Mod+Shift+c      → Reload i3 config
 Mod+Shift+r      → Restart i3 inplace
 Mod+Shift+e      → Exit i3 (with confirmation)
@@ -22,7 +21,6 @@ Mod+f            → Toggle fullscreen focused container
 Mod+s            → Layout stacking
 Mod+w            → Layout tabbed
 Mod+e            → Toggle split layout
-
 Mod+a            → Focus parent container
 
 # Workspace Management
@@ -37,15 +35,7 @@ l / Up           → Shrink height
 
 Enter / Escape / Mod+r → Exit resize mode
 
-# Volume (Hardware Keys)
-XF86AudioRaiseVolume  → Volume up + refresh status
-XF86AudioLowerVolume  → Volume down + refresh status
-XF86AudioMute         → Toggle mute + refresh status
-XF86AudioMicMute      → Toggle mic mute + refresh status
-
----
-
-Kitty Terminal:
+--- Kitty Terminal:
 
 Ctrl+Right       → Next tab
 Ctrl+Left        → Previous tab
@@ -60,3 +50,33 @@ Ctrl+Shift+t     → Set tab title
 
 Ctrl+=           → Increase font size
 Ctrl+-           → Decrease font size
+
+--- Brave Browser (Default Shortcuts):
+
+Ctrl+t           → Open new tab
+Ctrl+w           → Close current tab
+Ctrl+Shift+t     → Reopen last closed tab
+Ctrl+Tab         → Next tab
+Ctrl+Shift+Tab   → Previous tab
+Ctrl+L           → Focus address bar
+Ctrl+R / F5      → Reload page
+Ctrl+Shift+R     → Reload page ignoring cache
+Ctrl+F           → Find on page
+Ctrl+Shift+B     → Toggle bookmarks bar
+Ctrl+H           → Open History
+Ctrl+J           → Open Downloads
+Ctrl+Shift+Delete→ Clear browsing data
+
+--- tmux (Default Prefix: Ctrl+b):
+
+Ctrl+b c         → Create new window
+Ctrl+b d         → Detach session
+Ctrl+b n         → Next window
+Ctrl+b p         → Previous window
+Ctrl+b &         → Kill window
+Ctrl+b "         → Split pane horizontally
+Ctrl+b %         → Split pane vertically
+Ctrl+b o         → Toggle between panes
+Ctrl+b x         → Kill pane
+Ctrl+b [         → Enter copy mode
+Ctrl+b ]         → Paste buffer
