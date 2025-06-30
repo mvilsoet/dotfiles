@@ -47,7 +47,7 @@ Ctrl+Shift+t     → Set tab title
 Ctrl+=           → Increase font size
 Ctrl+-           → Decrease font size
 
------ Brave Browser (Default Shortcuts):
+----- Brave:
 Ctrl+t           → Open new tab
 Ctrl+w           → Close current tab
 Ctrl+Shift+t     → Reopen last closed tab
