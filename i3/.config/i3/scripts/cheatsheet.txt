@@ -1,5 +1,4 @@
-i3wm Keybindings:
-
+----- i3wm Keybindings:
 # Launch and Exit
 Mod+Enter        → Open terminal
 Mod+d            → Run dmenu
@@ -32,11 +31,9 @@ j / Left         → Shrink width
 k / Down         → Grow height
 l / Up           → Shrink height
 ; / Right        → Grow width
-
 Enter / Escape / Mod+r → Exit resize mode
 
---- Kitty Terminal:
-
+----- Kitty Terminal:
 Ctrl+Right       → Next tab
 Ctrl+Left        → Previous tab
 Ctrl+Shift+Right → Move tab forward
@@ -47,12 +44,10 @@ Ctrl+q / Ctrl+w  → Close tab
 Ctrl+Shift+q / Ctrl+Shift+w → Close OS window
 
 Ctrl+Shift+t     → Set tab title
-
 Ctrl+=           → Increase font size
 Ctrl+-           → Decrease font size
 
---- Brave Browser (Default Shortcuts):
-
+----- Brave Browser (Default Shortcuts):
 Ctrl+t           → Open new tab
 Ctrl+w           → Close current tab
 Ctrl+Shift+t     → Reopen last closed tab
@@ -60,15 +55,10 @@ Ctrl+Tab         → Next tab
 Ctrl+Shift+Tab   → Previous tab
 Ctrl+L           → Focus address bar
 Ctrl+R / F5      → Reload page
-Ctrl+Shift+R     → Reload page ignoring cache
-Ctrl+F           → Find on page
+Ctrl+Shift+N     → Private Window
 Ctrl+Shift+B     → Toggle bookmarks bar
-Ctrl+H           → Open History
-Ctrl+J           → Open Downloads
-Ctrl+Shift+Delete→ Clear browsing data
 
---- tmux (Default Prefix: Ctrl+b):
-
+----- tmux (Default Prefix: Ctrl+b):
 Ctrl+b c         → Create new window
 Ctrl+b d         → Detach session
 Ctrl+b n         → Next window
