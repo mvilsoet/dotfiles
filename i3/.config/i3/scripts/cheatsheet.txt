@@ -1,3 +1,5 @@
+
+
 ----- i3wm Keybindings:
 # Launch and Exit
 Mod+Enter        → Open terminal
