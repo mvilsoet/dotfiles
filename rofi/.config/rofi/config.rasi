@@ -1,7 +1,6 @@
-//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
-@theme "~/.local/share/rofi/themes/spotlight-dark.rasi"
-
 configuration {
   show-icons:         true;
   icon-theme:         "Papirus-Dark";
 }
+
+@theme "~/.local/share/rofi/themes/spotlight-dark.rasi"

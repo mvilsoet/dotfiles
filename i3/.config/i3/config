@@ -196,6 +196,9 @@ gaps outer 1
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+space exec --no-startup-id ~/.config/i3/scripts/show_cheatsheet.sh
 
+# i3lock
+bindsym $mod+Shift+x exec --no-startup-id ~/.config/i3/scripts/lock.sh
+
 # Startup apps
 exec --no-startup-id picom --window-shader-fg=$HOME/.config/picom/rounded-borders.glsl
 # exec --no-startup-id xsettingsd

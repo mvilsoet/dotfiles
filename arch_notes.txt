@@ -5,10 +5,11 @@ boot from usb. archinstall
 Start with: GNOME only (profile GNOME + gdu + nvidia-proprietary, multilib enabled)
 Use https://chromewebstore.google.com/detail/gruvbox-theme/pligoajaaggbghgopjdmkfbnaodknplm
 https://github.com/newmanls/rofi-themes-collection/tree/master
+Something not working? `xprop` and click it...
 
 =====RICE=====
 sudo pacman -Syu
-sudo pacman -S fastfetch i3 kitty polybar rofi nvim feh dunst papirus-icon-theme thunderbird lxqt-policykit xclip 
+sudo pacman -S fastfetch i3 kitty polybar rofi nvim feh dunst papirus-icon-theme thunderbird lxqt-policykit xclip scrot
 sudo pacman -S --needed base-devel git
 mkdir ~/Packages
 cd ~/Packages
@@ -17,14 +18,11 @@ cd yay
 makepkg -si
 yay -Syu
 yay -S ttf-meslo-nerd
-yay -S picom stow
+yay -S picom stow i3lock-color
 =====RICE=====
 
 =====BLUETOOTH=====
 sudo pacman -S bluez bluez-utils blueman
-sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
-bluetoothctl > power on > default-agent > scan on > #wait to see your device XX:XX... > scan off > connect XX:XX... > trust XX:XX... > exit
 =====BLUETOOTH=====
 
 =====BIRDTRAY=====
