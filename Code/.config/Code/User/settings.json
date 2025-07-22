@@ -20,6 +20,11 @@
   "telemetry.telemetryLevel": "off",
   "git.ignoreLegacyWarning": true,
   "git.confirmSync": false,
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "editor.formatOnSave": true, 
+  "files.autoSave": "afterDelay",
   "security.workspace.trust.untrustedFiles": "open",
   "jupyter.askForKernelRestart": false,
   "chat.editor.wordWrap": "on",
@@ -33,14 +38,6 @@
   ],
   "workbench.colorTheme": "lucy-evening",
   "remote.SSH.useLocalServer": false,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
   "vspacecode.bindings": [
     {
       "key": " ",
@@ -535,7 +532,4 @@
       ]
     }
   ],
-  "workbench.iconTheme": "vscode-icons",
-  "explorer.confirmDelete": false,
-  "git.autofetch": true
 }
