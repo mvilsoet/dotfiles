@@ -25,6 +25,7 @@
   "git.autofetch": true,
   "editor.formatOnSave": true, 
   "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
   "security.workspace.trust.untrustedFiles": "open",
   "jupyter.askForKernelRestart": false,
   "chat.editor.wordWrap": "on",
