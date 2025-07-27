@@ -483,16 +483,21 @@
       ]
     },
     {
-      "before": [
-        ","
-      ],
+      "before": ["<leader>", "y"],
       "commands": [
-        "vspacecode.space",
+        "editor.action.selectAll",
         {
-          "command": "whichkey.triggerKey",
-          "args": "m"
+          "command": "editor.action.clipboardCopyAction"
         }
       ]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["editor.action.outdentLines"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -502,18 +507,6 @@
       ],
       "commands": [
         "vspacecode.space"
-      ]
-    },
-    {
-      "before": [
-        ","
-      ],
-      "commands": [
-        "vspacecode.space",
-        {
-          "command": "whichkey.triggerKey",
-          "args": "m"
-        }
       ]
     },
     {
@@ -533,4 +526,5 @@
       ]
     }
   ],
+  "editor.lineNumbers": "relative",
 }
