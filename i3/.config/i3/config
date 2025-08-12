@@ -204,7 +204,7 @@ exec --no-startup-id picom --window-shader-fg=$HOME/.config/picom/rounded-border
 # exec --no-startup-id xsettingsd
 exec --no-startup-id dunst
 exec --no-startup-id lxqt-policykit-agent
-exec --no-startup-id polybar
+exec --no-startup-id ~/.config/polybar/scripts/launch_polybar.sh
 exec --no-startup-id nm-applet  # tray networkmanager
 exec --no-startup-id blueman-applet
 exec --no-startup-id xclip
