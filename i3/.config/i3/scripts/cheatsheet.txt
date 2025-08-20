@@ -22,8 +22,8 @@ Mod+e            → Toggle split layout
 Mod+a            → Focus parent container
 
 # Workspace Management
-Mod+1..0         → Switch to workspace 1..10
-Mod+Shift+1..0   → Move focused container to workspace 1..10
+Mod+[1-9]        → Switch to workspace 1..10
+Mod+Shift+[1-9]  → Move focused container to workspace 1..10
 
 # Resize Mode (Mod+r)
 j / Left         → Shrink width
@@ -52,7 +52,7 @@ Ctrl+Shift+Tab   → Previous tab
 Ctrl+L           → Focus address bar
 Ctrl+R / F5      → Reload page
 Ctrl+Shift+N     → Private Window
-Ctrl+Shift+B     → Toggle bookmarks bar
+Ctrl+[1-9]       → Select tab by number
 
 ----- tmux (Default Prefix: Ctrl+b):
 Ctrl+b c         → Create new window
