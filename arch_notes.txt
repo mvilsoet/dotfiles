@@ -19,6 +19,7 @@ makepkg -si
 yay -Syu
 yay -S ttf-meslo-nerd
 yay -S picom stow i3lock-color visual-studio-code-bin
+yay -S brave-bin
 =====RICE=====
 
 =====BLUETOOTH=====
